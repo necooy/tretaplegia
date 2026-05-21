@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alerta de Segurança</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+            color: #333333;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 900px;
+            width: 100%;
+        }
+
+        .texto-maior {
+            font-size: 2.5rem;
+            font-weight: 700;
+            line-height: 1.3;
+            margin-bottom: 30px;
+            color: #d9534f;
+        }
+
+        .texto-menor {
+            font-size: 1.25rem;
+            font-weight: 400;
+            line-height: 1.6;
+            color: #555555;
+            margin-bottom: 50px;
+        }
+
+        /* Área dos integrantes */
+        .integrantes-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .card-integrante {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 180px;
+        }
+
+        .placeholder-foto {
+            width: 150px;
+            height: 150px;
+            background-color: #e0e0e0;
+            border-radius: 50%; /* Deixa a foto redonda, se preferir quadrada retire esta linha */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 15px;
+            border: 2px dashed #b0b0b0;
+            object-fit: cover; /* Garante que a foto final não fique distorcida */
+        }
+
+        .nome-integrante {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #444444;
+            line-height: 1.2;
+        }
+
+        @media (max-width: 600px) {
+            .texto-maior {
+                font-size: 1.8rem;
+            }
+            .texto-menor {
+                font-size: 1rem;
+                margin-bottom: 30px;
+            }
+            .integrantes-container {
+                gap: 20px;
+            }
+            .placeholder-foto {
+                width: 120px;
+                height: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="texto-maior">
+            Você acaba de cair em um golpe de engenharia social feito pelos alunos Leonardo henrique gonçalves da Cruz, Lucas Goularte de Oliveira e Enzo Marques Cardona
+        </h1>
+        
+        <p class="texto-menor">
+            Para que não caia em golpes assim, recomendamos que olhe quem te mandou o e-mail, junto com o cuidado de não entrar em links desconhecidos.
+        </p>
+
+        <!-- Seção dos Integrantes -->
+        <div class="integrantes-container">
+            
+            <!-- Integrante 1 -->
+            <div class="card-integrante">
+                <img class="placeholder-foto" src="substitua-pela-foto-do-leonardo.jpg" alt="Foto Leonardo Henrique">
+                <p class="nome-integrante">Leonardo Henrique G. da Cruz</p>
+            </div>
+
+            <!-- Integrante 2 -->
+            <div class="card-integrante">
+                <img class="placeholder-foto" src="substitua-pela-foto-do-lucas.jpg" alt="Foto Lucas Goularte">
+                <p class="nome-integrante">Lucas Goularte de Oliveira</p>
+            </div>
+
+            <!-- Integrante 3 -->
+            <div class="card-integrante">
+                <img class="placeholder-foto" src="substitua-pela-foto-do-enzo.jpg" alt="Foto Enzo Marques">
+                <p class="nome-integrante">Enzo Marques Cardona</p>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
